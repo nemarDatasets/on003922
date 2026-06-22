@@ -1,7 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Multisensory Correlation Detector",
+  "description": "A magnetoencephalography dataset from 13 participants performing audiovisual multisensory tasks, including causality judgment, temporal order judgment, and unimodal localizer conditions. The dataset comprises 1500 trials of audiovisual sequences with simultaneous behavioral recordings and structural MRI, designed to investigate neural mechanisms of multisensory correlation computations using time-resolved encoding models.",
+  "methods_description": "MEG data were acquired using a 306-channel Neuromag Elekta system at 1 kHz sampling rate with 0.03-330 Hz bandpass filtering. Participants completed 10 blocks (3 causality, 3 temporal order, 2 auditory localizer, 2 visual localizer) presenting six audiovisual sequences. Head position was tracked with four HPI coils before each block. Anatomical T1-weighted MRI was acquired on a 3-T Siemens Trio scanner (1.0 × 1.0 × 1.1 mm voxels, TR=2300 ms, TE=2.98 ms). EOG and ECG were recorded simultaneously.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -14,12 +16,27 @@
       "orcid": "0000-0002-2569-5502"
     }
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds003922.v1.0.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "MEG"
     },
+    {
+      "term": "multisensory integration"
+    },
+    {
+      "term": "audiovisual perception"
+    },
+    {
+      "term": "temporal order judgment"
+    },
+    {
+      "term": "causality perception"
+    },
+    {
+      "term": "encoding model"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.1038/s41467-022-29687-6",
       "identifier_type": "DOI",
@@ -44,6 +61,11 @@
       "identifier": "10.1038/sdata.2018.110",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds003922.v1.0.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -57,13 +79,13 @@
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "Structural MRI Dataset",
   "modalities": [
     "anat",
     "meg"
   ],
-  "resource_type_specific": "Structural MRI Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "80.6 GB (171 files)"
   ],
   "formats": [
     ".csv",
@@ -73,44 +95,8 @@
     ".json",
     ".md",
     ".tsv",
-    ".txt"
+    ".txt",
+    ".yml"
   ],
-  "description": "This magnetoencephalography (MEG) dataset comprises recordings from 13 participants performing audiovisual tasks designed to investigate multisensory correlation computations in the human brain. Participants completed causality judgment and temporal order judgment tasks while viewing audiovisual sequences, with additional passive listening and viewing localizer blocks. The dataset includes 1500 total trials of six distinct audiovisual stimulus combinations, along with anatomical MRI and behavioral data, enabling time-resolved encoding models of multisensory processing.",
-  "methods_description": "MEG data were acquired using a 306-channel Neuromag Elekta system at 1 kHz sampling rate with 0.03-330 Hz band-pass filtering. Head position was tracked with four HPI coils before each block, and anatomical landmarks (nasion and pre-auricular points) were digitized. Simultaneous EOG and ECG recordings were obtained. T1-weighted anatomical MRI was acquired on a 3-T Siemens Trio scanner (1.0 × 1.0 × 1.1 mm voxels, TR=2300 ms, TE=2.98 ms). Empty room recordings were collected for noise covariance estimation.",
-  "keywords": [
-    {
-      "term": "MEG"
-    },
-    {
-      "term": "multisensory integration"
-    },
-    {
-      "term": "audiovisual perception"
-    },
-    {
-      "term": "temporal order judgment"
-    },
-    {
-      "term": "causality perception"
-    },
-    {
-      "term": "encoding model"
-    },
-    {
-      "term": "neuroimaging"
-    },
-    {
-      "term": "audiovisual integration"
-    },
-    {
-      "term": "time-resolved encoding"
-    },
-    {
-      "term": "temporal binding"
-    },
-    {
-      "term": "multisensory correlation"
-    }
-  ],
-  "source_hash": "f5162df8250ea3e9ff0e813a5c3fb4f4614f55b37ce1d8974b0e1a13fa10bc1e"
+  "source_hash": "a19419df3c891a0c197176aa5a9cc8eeee172720dc987db50f0798874395d7e2"
 }
