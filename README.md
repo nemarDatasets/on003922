@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on003922-blue)](https://doi.org/10.82901/nemar.on003922)
+
 ### DESCRIPTION
 Magnetoencephalography (MEG) dataset recorded during the presentation of audiovisual sequences with a causality judgment task and temporal order judgment task. This MEG dataset was prepared in the Brain Imaging Data Structure (MEG-BIDS, Niso et al. 2018) format using MNE-BIDS (Appelhoff et al. 2019).
 
