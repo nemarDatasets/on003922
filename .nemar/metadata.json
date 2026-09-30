@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Multisensory Correlation Detector",
-  "description": "A magnetoencephalography dataset from 13 participants performing audiovisual multisensory tasks, including causality judgment, temporal order judgment, and unimodal localizer conditions. The dataset comprises 1500 trials of audiovisual sequences with simultaneous behavioral recordings and structural MRI, designed to investigate neural mechanisms of multisensory correlation computations using time-resolved encoding models.",
-  "methods_description": "MEG data were acquired using a 306-channel Neuromag Elekta system at 1 kHz sampling rate with 0.03-330 Hz bandpass filtering. Participants completed 10 blocks (3 causality, 3 temporal order, 2 auditory localizer, 2 visual localizer) presenting six audiovisual sequences. Head position was tracked with four HPI coils before each block. Anatomical T1-weighted MRI was acquired on a 3-T Siemens Trio scanner (1.0 × 1.0 × 1.1 mm voxels, TR=2300 ms, TE=2.98 ms). EOG and ECG were recorded simultaneously.",
+  "description": "Magnetoencephalography (MEG) recordings from 13 participants who viewed and heard audiovisual sequences while performing causality judgment and temporal order judgment tasks. The same six audiovisual sequences were used in both tasks, which allowed endogenous task demands to be manipulated while sensory input stayed constant. Auditory-only and visual-only localizer blocks are also included, along with anatomical MRI, EOG, ECG and empty-room recordings. The dataset supports research on multisensory correlation computations in the human brain.",
+  "methods_description": "MEG was recorded in a magnetically shielded room with a 306-channel Neuromag Elekta system, sampled at 1 kHz and band-pass filtered at 0.03-330 Hz. Head position was measured with four HPI coils before each block. Fiducials were digitized, and EOG and ECG were recorded simultaneously. Two minutes of empty-room data were acquired for the noise covariance. The T1-weighted anatomical MRI was acquired on a 3T Siemens Trio scanner. Each of the 10 blocks lasted 8 minutes: 3 causality judgment, 3 temporal order judgment, 2 auditory localizer and 2 visual localizer.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -21,34 +21,31 @@
       "term": "MEG"
     },
     {
+      "term": "Magnetoencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
+    },
+    {
       "term": "multisensory integration"
     },
     {
       "term": "audiovisual perception"
     },
     {
+      "term": "causality judgment"
+    },
+    {
       "term": "temporal order judgment"
-    },
-    {
-      "term": "causality perception"
-    },
-    {
-      "term": "encoding model"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "10.1038/s41467-022-29687-6",
       "identifier_type": "DOI",
-      "relation_type": "References"
-    },
-    {
-      "identifier": "https://github.com/nemarDatasets/on003922",
-      "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003922",
+      "identifier": "https://github.com/nemarDatasets/on003922",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     },
@@ -66,6 +63,11 @@
       "identifier": "10.18112/openneuro.ds003922.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on003922",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -85,7 +87,7 @@
     "meg"
   ],
   "sizes": [
-    "80.6 GB (171 files)"
+    "75.08 GB (171 files)"
   ],
   "formats": [
     ".csv",
